@@ -31,14 +31,14 @@ const projects = [
       "Chrome extension provides AI-powered hints and code suggestions directly on LeetCode, helping users solve problems more efficiently with real-time, in-browser assistance.",
     imageSrc:
       "/images/extention.jpg",
-    tags: ["Vue.js", "Node.js", "MongoDB", "Stripe API"],
+    tags: ["React.js", "Node.js", "MongoDB", "OpenAI", "TypeScript", "TaitwindCSS"],
     link: "https://github.com/saifalikhan9/Extention",
   }
 ];
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-16 md:py-24 bg-muted/30">
+    <section id="projects" className="py-16 md:py-24 bg-muted/10 rounded">
       <div className="container">
         <SectionHeading
           title="Selected Projects"

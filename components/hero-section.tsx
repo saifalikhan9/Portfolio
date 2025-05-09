@@ -50,7 +50,7 @@ export function HeroSection() {
               src="/images/dp.jpg"
               alt="Profile picture"
               fill
-           
+              objectFit="cover"
               className="rounded-xl "
               priority
             />

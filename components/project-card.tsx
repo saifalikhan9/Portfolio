@@ -25,7 +25,7 @@ export function ProjectCard({ title, description, imageSrc, tags, link, index }:
       viewport={{ once: true }}
     >
       <Card className="overflow-hidden group hover:shadow-lg transition-all duration-300 h-full flex flex-col">
-        <div className="relative aspect-video overflow-hidden">
+        <div className="m-2 rounded shadow-xl relative aspect-video overflow-hidden">
           <Image
             src={imageSrc}
             alt={title}

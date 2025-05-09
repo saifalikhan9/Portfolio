@@ -116,68 +116,76 @@
   * {
     @apply border-border;
   }
-  
+
   html {
     scroll-behavior: smooth;
     font-size: 16px;
   }
-  
+
   body {
     @apply bg-background text-foreground antialiased;
   }
-  
+
   .container {
     @apply px-4 md:px-6 lg:px-8 mx-auto max-w-7xl;
   }
-  
+
   section {
-    @apply py-16 md:py-24 lg:py-32;
+    @apply py-16 md:py-24 lg:py-32 my-8;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+  section[aria-label="Notifications alt+T"] {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply tracking-tight font-bold;
   }
-  
+
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
   }
-  
+
   h2 {
     @apply text-3xl md:text-4xl leading-tight;
   }
-  
+
   h3 {
     @apply text-2xl md:text-3xl leading-snug;
   }
-  
+
   p {
     @apply leading-relaxed;
   }
-  
+
   .card {
     @apply rounded-lg border bg-card p-6 shadow-sm transition-all duration-200 hover:shadow-md;
   }
-  
+
   .input-group {
     @apply space-y-2;
   }
-  
+
   .input-label {
     @apply text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70;
   }
-  
+
   .badge {
     @apply inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
   }
-  
+
   .link {
     @apply text-primary hover:text-primary/80 transition-colors;
   }
-  
+
   .button-group {
     @apply flex flex-wrap gap-4;
   }
-  
+
   .grid-cols-auto-fit {
     @apply grid gap-6;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
@@ -188,11 +196,11 @@
   .text-balance {
     text-wrap: balance;
   }
-  
+
   .animation-delay-200 {
     animation-delay: 200ms;
   }
-  
+
   .animation-delay-400 {
     animation-delay: 400ms;
   }
