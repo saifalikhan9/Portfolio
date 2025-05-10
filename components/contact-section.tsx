@@ -2,50 +2,38 @@
 
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/section-heading";
-import { Card, CardContent } from "@/components/ui/card";
-import LinkedInIcon from "./linkedIn-icon";
-import PhoneIcon from "./phone-icon";
-import Image from "next/image";
+import LinkedInIcon from "./Icons/linkedIn-icon";
+import PhoneIcon from "./Icons/phone-icon";
 import Link from "next/link";
-import { GithubIcon } from "./github-icon";
+import { GithubIcon } from "./Icons/github-icon";
+import GmailIcon from "./Icons/gmail-icon";
+import { Card } from "./ui/card";
 
 export function ContactSection() {
   const contacts = [
     {
       name: "LinkedIn",
       description: "View Account",
-      icon: <LinkedInIcon />,
+      icon: <LinkedInIcon width={30} height={30} />,
       href: "https://www.linkedin.com/in/saifalikhan10/",
     },
     {
       name: "Github",
       description: "View Account",
-      icon: <GithubIcon />,
+      icon: <GithubIcon width={30} height={30} />,
       href: "https://github.com/saifalikhan9",
     },
 
     {
       name: "Email",
       description: "saifsh0921@gmail.com",
-      icon: (
-        <motion.div
-          whileHover={{ scale: 1.15, to: 0 }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
-          <Image
-            src="/images/gmail-icon.png"
-            alt="Gmail icon"
-            width={24}
-            height={24}
-          />
-        </motion.div>
-      ),
-      href: "mailto:saifsh0921@gmail.com",
+      icon: <GmailIcon width={30} height={30} />,
+      href: "https://mail.google.com/mail/u/0/?view=cm&fs=1&to=saifsh0921@gmail.com",
     },
     {
       name: "Phone",
       description: "+91 9539132056",
-      icon: <PhoneIcon />,
+      icon: <PhoneIcon width={30} height={30} />,
       href: "tel:+919539132056",
     },
   ];
@@ -58,7 +46,8 @@ export function ContactSection() {
           subtitle="Feel free to reach out for collaborations or just a friendly hello 😊"
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-5xl mx-auto">
+<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-4xl mx-auto px-4">
+
           {contacts.map((contact, i) => (
             <motion.div
               key={contact.name}
@@ -66,22 +55,23 @@ export function ContactSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
+              className=""
             >
-              <Card className="hover:shadow-lg">
+              <Card className="rounded-xl p-2  border shadow">
                 <Link
                   href={contact.href}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <CardContent className="p-3 flex flex-col items-center text-center gap-3">
-                    <div className="bg-primary/10 p-3 rounded-full">
-                      {contact.icon}
+                  <div className="p-1">
+                    <div className="mb- py-2">{contact.icon}</div>
+                    <div className="">
+                      <h3 className="text-xl font-medium">{contact.name}</h3>
+                      <p className="text-sm text-muted-foreground truncate">
+                        {contact.description}
+                      </p>
                     </div>
-                    <h3 className="font-medium">{contact.name}</h3>
-                    <p className="text-sm text-muted-foreground">
-                      {contact.description}
-                    </p>
-                  </CardContent>
+                  </div>
                 </Link>
               </Card>
             </motion.div>

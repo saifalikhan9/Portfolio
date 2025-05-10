@@ -7,7 +7,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { cn } from '@/lib/utils' 
 import { ModeToggle } from "@/components/mode-toggle"; 
-import { MenuIcon } from './menu-bar-icon'
+import { MenuIcon } from './Icons/menu-bar-icon'
 
 export  function Navbar() {
   const [scrolled, setScrolled] = useState(false);

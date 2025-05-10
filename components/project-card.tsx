@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 interface ProjectCardProps {
@@ -33,8 +33,8 @@ export function ProjectCard({ title, description, imageSrc, tags, link, index }:
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
-        <CardContent className="p-6 flex-1 flex flex-col">
-          <div className="flex items-start justify-between mb-2">
+        <div className="px-5 py-3 flex-1 flex flex-col">
+            <div className="flex items-start justify-between mb-2">
             <h3 className="text-xl font-semibold">{title}</h3>
             {link && (
               <Link href={link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
@@ -50,7 +50,8 @@ export function ProjectCard({ title, description, imageSrc, tags, link, index }:
               </Badge>
             ))}
           </div>
-        </CardContent>
+        </div>
+      
       </Card>
     </motion.div>
   );
