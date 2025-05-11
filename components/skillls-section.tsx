@@ -10,6 +10,7 @@ export function SkillsSection() {
     "MongoDB",
     "Express.js",
     "Node.js",
+    "TailwindCSS",
     "TypeScript",
     "Next.js",
     "SQL",
@@ -19,7 +20,7 @@ export function SkillsSection() {
     "Docker"
   ];
   return (
-    <div className="mx-4 ">
+    <div className="container mx-auto ">
       <h2 className="mb-10">Skills</h2>
       {skills.map((v, i) => (
         <Badge
