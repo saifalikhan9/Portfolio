@@ -32,9 +32,9 @@ export function ContactSection() {
     },
     {
       name: "Phone",
-      description: "+91 9539132056",
+      description: "+91 8090587775",
       icon: <PhoneIcon width={30} height={30} />,
-      href: "tel:+919539132056",
+      href: "tel:+918090587775",
     },
   ];
 
