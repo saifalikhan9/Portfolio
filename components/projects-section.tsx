@@ -15,6 +15,19 @@ const projects = [
       "PostgresSQL",
       "Shadcn UI",
     ],
+    link: "https://github.com/saifalikhan9/MCP-Server-of-X",
+  },
+  {
+    title: "MCP Server Project",
+    description:
+      "This project is a Model Context Protocol (MCP) server that integrates with the Twitter API to allow users to create posts on Twitter directly from the server.",
+    imageSrc: "/images/mcp.jpg",
+    tags: [
+     
+      "TypeScript",
+      "Twitter API",
+      "Model Context Protocol SDK "
+    ],
     link: "https://bill-splitter-app-sigma.vercel.app/",
   },
   {
@@ -29,11 +42,17 @@ const projects = [
     title: "Chrome Extention",
     description:
       "Chrome extension provides AI-powered hints and code suggestions directly on LeetCode, helping users solve problems more efficiently with real-time, in-browser assistance.",
-    imageSrc:
-      "/images/extention.jpg",
-    tags: ["React.js", "Node.js", "MongoDB", "OpenAI", "TypeScript", "TaitwindCSS"],
+    imageSrc: "/images/extention.jpg",
+    tags: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "OpenAI",
+      "TypeScript",
+      "TaitwindCSS",
+    ],
     link: "https://github.com/saifalikhan9/Extention",
-  }
+  },
 ];
 
 export function ProjectsSection() {
