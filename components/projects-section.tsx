@@ -15,20 +15,15 @@ const projects = [
       "PostgresSQL",
       "Shadcn UI",
     ],
-    link: "https://github.com/saifalikhan9/MCP-Server-of-X",
+    link: "https://bill-splitter-app-sigma.vercel.app/",
   },
   {
     title: "MCP Server Project",
     description:
       "This project is a Model Context Protocol (MCP) server that integrates with the Twitter API to allow users to create posts on Twitter directly from the server.",
     imageSrc: "/images/mcp.jpg",
-    tags: [
-     
-      "TypeScript",
-      "Twitter API",
-      "Model Context Protocol SDK "
-    ],
-    link: "https://bill-splitter-app-sigma.vercel.app/",
+    tags: ["TypeScript", "Twitter API", "Model Context Protocol SDK "],
+    link: "https://github.com/saifalikhan9/MCP-Server-of-X",
   },
   {
     title: "Python Buddy",
