@@ -5,26 +5,29 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import Heading from "./headingText";
 
 export function HeroSection() {
   return (
-    <section className="relative py-20 md:py-28 lg:py-36 overflow-hidden px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+    <section className="">
+      <div className="container mx-auto z-10 flex flex-col md:flex-row items-center justify-between gap-13">
         {/* Text content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-full md:w-1/2 max-w-2xl"
+          className="w-full md:w-1/2"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-            I’m <span className="text-primary">Saif</span> — Code Alchemist
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            Turning CRUD operations into gold-standard features, debugging race
-            conditions with <code className="font-mono">async/await</code>, and
-            deploying zero-downtime updates via{" "}
-            <code className="font-mono">Docker Swarm</code>.
+          <Heading />
+
+          <h2 className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+            Crafting intuitive web experiences from concept to code.
+          </h2>
+          <p className="my-4">
+            I blend clean design with solid engineering to build digital
+            products that don't just work  they make an impact. Whether it's a
+            sleek website, a powerful web app, or a custom solution, I help
+            bring ideas to life with clarity and purpose.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" asChild>
@@ -39,13 +42,14 @@ export function HeroSection() {
         </motion.div>
 
         {/* Image */}
-        <div className="w-full md:w-1/2 flex justify-center">
+        <div className="w-full md:w-1/2 flex justify-center ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="
               relative
+              flex justify-end items-center
               aspect-square
               w-full
               max-w-xs
@@ -60,7 +64,8 @@ export function HeroSection() {
             <Image
               src="/images/dp.jpg"
               alt="Profile picture"
-              fill
+              height={400}
+              width={400}
               style={{ objectFit: "cover" }}
               className="rounded-xl"
               priority

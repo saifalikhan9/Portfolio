@@ -3,6 +3,14 @@ import { SectionHeading } from "@/components/section-heading";
 
 const projects = [
   {
+    title: "Resume Roaster",
+    description:
+      "A Next.js app that humorously roasts resumes using OpenAI and Gemini LLMs. Features smart resume parsing, a clean Tailwind CSS UI, and witty, context-aware feedback that makes resume reviews fun and engaging.",
+    imageSrc: "/images/resumeRoast.png",
+    tags: ["Next.js", "Node.js", "Express.js", "Gemini SDK", "Redis"],
+    link: "https://roast-resume-frontend.vercel.app/",
+  },
+  {
     title: "Bill Splitting Tool",
     description:
       "A tool to fairly divide electricity bills among flats based on meter readings, ensuring transparent and accurate cost sharing with a user-friendly interface.",
@@ -25,14 +33,7 @@ const projects = [
     tags: ["TypeScript", "Twitter API", "Model Context Protocol SDK "],
     link: "https://github.com/saifalikhan9/MCP-Server-of-X",
   },
-  {
-    title: "Python Buddy",
-    description:
-      "An interactive Python tutor for students, featuring a chatbot that answers questions and a code playground to practice coding directly in the browser.",
-    imageSrc: "/images/python.jpg",
-    tags: ["React.js", "Prisma-ORM", "PostgresSQL", "Gemini SDK"],
-    link: "https://python-tutor-project.onrender.com/",
-  },
+
   {
     title: "Chrome Extention",
     description:

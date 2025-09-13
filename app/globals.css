@@ -83,7 +83,7 @@
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
+  --popover: oklch(6.72% 0.00001 271.152);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
@@ -131,7 +131,7 @@
   }
 
   section {
-    @apply py-16 md:py-24 lg:py-32 my-8;
+    @apply py-14  my-2;
   }
   section[aria-label="Notifications alt+T"] {
     padding: 0 !important;
