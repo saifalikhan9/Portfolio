@@ -7,6 +7,8 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 import React, { useRef, useState } from "react";
 
@@ -201,7 +203,7 @@ export const MobileNavMenu = ({
   children,
   className,
   isOpen,
-  onClose,
+
 }: MobileNavMenuProps) => {
   return (
     <AnimatePresence>
@@ -243,11 +245,11 @@ export const NavbarLogo: React.FC<NavbarLogoProps> = ({
   text,
 }) => {
   return (
-    <a
+    <Link 
       href="/"
       className="relative  z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <img
+      <Image
         src={`${imgLink}`}
         alt="logo"
         width={width || 40}
@@ -256,7 +258,7 @@ export const NavbarLogo: React.FC<NavbarLogoProps> = ({
       {text && (
         <span className="font-medium text-black dark:text-white">{text}</span>
       )}
-    </a>
+    </Link>
   );
 };
 type NavbarButtonProps<T extends React.ElementType> = {
@@ -275,7 +277,7 @@ export const NavbarButton = <T extends React.ElementType = "a">({
 }: NavbarButtonProps<T>) => {
   const Tag = as || "a";
 
-  let baseStyles =
+  const baseStyles =
     "rounded-md bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
 
   const variantStyles = {

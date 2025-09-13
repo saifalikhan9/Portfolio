@@ -25,7 +25,7 @@ export function HeroSection() {
           </h2>
           <p className="my-4">
             I blend clean design with solid engineering to build digital
-            products that don't just work  they make an impact. Whether it's a
+            products that don`&apos;`t just work  they make an impact. Whether it`&apos;`s a
             sleek website, a powerful web app, or a custom solution, I help
             bring ideas to life with clarity and purpose.
           </p>
